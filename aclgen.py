@@ -49,6 +49,7 @@ from lib import junipersrx
 from lib import packetfilter
 from lib import demo
 from lib import nsxv
+from lib import comware5
 
 
 # pylint: disable=bad-indentation
@@ -146,6 +147,7 @@ def render_filters(source_file, definitions_obj, shade_check, exp_info):
     'cisco': {'optimized': True, 'renderer': cisco.Cisco},
     'ciscoasa': {'optimized': True, 'renderer': ciscoasa.CiscoASA},
     'ciscoxr': {'optimized': True, 'renderer': ciscoxr.CiscoXR},
+    'comware5': {'optimized': False, 'renderer': comware5.Comware5},
     'demo': {'optimized': True, 'renderer': demo.Demo},
     'gce': {'optimized': True, 'renderer': gce.GCE},
     'ipset': {'optimized': True, 'renderer': ipset.Ipset},
